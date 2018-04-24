@@ -1,9 +1,20 @@
 package com.liugh6;
 
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.Set;
+import java.util.Stack;
+import java.util.TreeSet;
+import java.util.Vector;
 
 class Thread1 extends Thread {
 	private String name;
@@ -45,6 +56,30 @@ public class Demo {
 		List list = new LinkedList();
 		// mTh2.start();
 		Map map = new HashMap();
+
+		List lst = new ArrayList();
+		// ³õÊ¼ÈÝÁ¿Îª10
+		for (int i = 0; i < 10; i++) {
+			lst.add(i);
+		}
+		lst.add(10);
+		for (int i = 0; i < 4; i++) {
+			lst.add(10 + i);
+		}
+		lst.add(15);
+		lst = new Vector();
+		lst = Collections.synchronizedList(null);
+		lst = new LinkedList();
+
+		Set set = new HashSet();
+		set = new LinkedHashSet();
+		set = new TreeSet<>();
+
+		Queue queue = new PriorityQueue<>();
+		queue = new ArrayDeque<>();
+		queue = new LinkedList();
+		// Map map = new TreeMap();
+		Stack v = new Stack();
 
 	}
 
